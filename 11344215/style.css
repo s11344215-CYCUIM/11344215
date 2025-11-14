@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #050818;
+    color: #f5f5ff;
+}
+
+.page {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px 30px 40px;
+    background-color: #050c1d;
+    border: 2px solid #ffffff22;
+}
+
+/* 頭像、基本資料、自我介紹 */
+.top-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.avatar-block {
+    flex: 0 0 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-circle {
+    flex: 0 0 220px;
+    min-height: 120px;
+    border-radius: 8px;
+    border: 1px dashed #ffffff55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;          
+}
+
+.avatar-circle img {
+    max-width: 100%;          
+    max-height: 100%;          
+    object-fit: cover;         
+    border-radius: 8px;
+}
+
+.intro-box p {
+    font-size: 18px;   
+    line-height: 1.7;
+}
+
+
+.avatar-icon {
+    font-size: 64px;
+}
+
+.info-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box {
+    padding: 15px 18px;
+    background-color: #0a1230;
+    border-radius: 8px;
+    border: 1px solid #ffffff22;
+}
+
+.name-title {
+    margin: 0;
+    font-size: 26px;
+}
+
+.subtitle {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #c5c5ff;
+}
+
+.motto {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #ffb46a;
+}
+
+/* 導覽列 */
+.nav-bar {
+    margin: 20px 0 30px;
+    padding: 10px 0;
+    border-top: 1px solid #ffffff22;
+    border-bottom: 1px solid #ffffff22;
+    text-align: center;
+}
+
+.nav-bar a {
+    color: #ff8b6d;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ffffff33;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-block {
+    flex: 1 1 300px;
+}
+
+/* 專業技能 */
+.circle-skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.circle-skill {
+    text-align: center;
+    font-size: 13px;
+}
+
+.circle-skill p {
+    margin-top: 8px;
+}
+
+.level-text {
+    color: #ffb46a;
+    font-size: 11px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 52px;
+    height: 52px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #050c1d;
+}
+
+.circle-skill .circle + p {
+    margin-top: 8px;
+}
+
+/* 各技能百分比 */
+.frontend {
+    background: conic-gradient(#ff8b6d 0 70%, #20274a 70% 100%);
+}
+
+.ui-design {
+    background: conic-gradient(#ff8b6d 0 65%, #20274a 65% 100%);
+}
+
+.graphic {
+    background: conic-gradient(#ff8b6d 0 70%, #20274a 70% 100%);
+}
+
+.marketing {
+    background: conic-gradient(#ff8b6d 0 60%, #20274a 60% 100%);
+}
+
+/* 程式技能長條圖 */
+.bar-skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.bar-label {
+    width: 110px;
+}
+
+.bar-outer {
+    flex: 1;
+    height: 10px;
+    background-color: #1b2344;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.bar-inner {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.python {
+    width: 85%;
+    background-color: #ff8b6d;
+}
+
+.java {
+    width: 65%;
+    background-color: #ff8b6d;
+}
+
+.htmlcss {
+    width: 50%;
+    background-color: #ff8b6d;
+}
+
+.cpp {
+    width: 40%;
+    background-color: #ff8b6d;
+}
+
+.bar-percent {
+    width: 40px;
+    text-align: right;
+}
+
+/* 經歷區 */
+.experience-item {
+    margin-bottom: 25px;
+}
+
+.experience-item h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffcf87;
+}
+
+.experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experience-text {
+    flex: 1 1 260px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.experience-image {
+    width: 220px;          
+    max-height: 400px;     
+    overflow: hidden;      
+    border-radius: 8px;
+    border: 1px dashed #ffffff55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-image img {
+    width: 100%;
+    height: auto;          
+    object-fit: contain;   
+}
+
+
+
+/* 聯絡方式 */
+.contact-section p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+.contact-section a {
+    color: #ff8b6d;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .avatar-block {
+        flex: none;
+    }
+
+    .skills-wrapper {
+        flex-direction: column;
+    }
+
+    .experience-content {
+        flex-direction: column;
+    }
+}
